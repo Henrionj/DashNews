@@ -1,7 +1,7 @@
 package Item;
 
 public class SocialNetwork extends Information {
-
+ 
 	/**
 	 * //affiche les informations sur le network choisis
 	 */

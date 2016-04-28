@@ -6,7 +6,7 @@ public class Parametres {
 		// TODO - implement Parametres.changeColor
 		throw new UnsupportedOperationException();
 	}
-
+ 
 	/**
 	 * 
 	 * @param theme

@@ -2,7 +2,7 @@ package Item;
 import java.util.Date;
 
 public abstract class Item {
-
+ 
 	private int size;
 	private Date dateAjout;
 

@@ -1,7 +1,7 @@
 package Item;
 
 public class Graphic extends Item {
-
+  
 	private int dataArray;
 	private int[] abscisse;
 	private int[] ordonnee;
