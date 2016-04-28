@@ -1,8 +1,10 @@
+package Item;
+
 public class Graphic extends Item {
 
 	private int dataArray;
 	private int[] abscisse;
-	private int[] ordonnée;
+	private int[] ordonnee;
 
 	public void sortAscending() {
 		// TODO - implement Graphic.sortAscending

@@ -1,3 +1,5 @@
+package Item;
+
 public class SocialNetwork extends Information {
 
 	/**

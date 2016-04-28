@@ -1,5 +1,7 @@
 import java.util.*;
 
+import Item.Item;
+
 public class Application {
 
 	Collection<Page> digitIndicator;

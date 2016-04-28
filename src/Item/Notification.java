@@ -1,3 +1,6 @@
+package Item;
+import java.util.Date;
+
 public class Notification {
 
 	private Date dateNotif;

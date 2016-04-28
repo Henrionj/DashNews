@@ -1,4 +1,4 @@
-public enum Privilèges {
+public enum Privileges {
 	;
 
 	private int DEFAULT_USER;

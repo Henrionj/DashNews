@@ -1,3 +1,6 @@
+package Item;
+import java.util.Date;
+
 public abstract class Information extends Item {
 
 	private String name;
