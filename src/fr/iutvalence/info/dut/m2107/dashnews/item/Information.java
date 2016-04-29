@@ -3,6 +3,14 @@ import java.util.Date;
 
 public abstract class Information extends Item {
 
+	/**
+	 * @param size
+	 */
+	public Information(int size) {
+		super(size);
+		// TODO Auto-generated constructor stub
+	}
+
 	private String name;
 
 	/**

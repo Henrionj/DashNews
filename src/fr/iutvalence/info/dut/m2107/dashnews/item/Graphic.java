@@ -14,4 +14,12 @@ public class Graphic extends Item {
 
 	}
 
+	/**
+	 * @param size
+	 */
+	public Graphic(int size) {
+		super(size);
+		// TODO Auto-generated constructor stub
+	}
+
 }
