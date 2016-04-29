@@ -6,8 +6,7 @@ public class Session {
 	private String password;
  
 	public void authentification() {
-		// TODO - implement Session.authentification
-		throw new UnsupportedOperationException();
+
 	}
 
 }
