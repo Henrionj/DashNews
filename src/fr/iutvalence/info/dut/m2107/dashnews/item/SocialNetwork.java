@@ -1,4 +1,5 @@
-package Item;
+package fr.iutvalence.info.dut.m2107.dashnews.item;
+
 
 public class SocialNetwork extends Information {
  

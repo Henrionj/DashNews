@@ -1,4 +1,4 @@
-package Item;
+package fr.iutvalence.info.dut.m2107.dashnews.item;
 import java.util.*;
  
 public class Calendar extends Item {
