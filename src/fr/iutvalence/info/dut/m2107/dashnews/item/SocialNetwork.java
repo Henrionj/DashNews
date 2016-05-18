@@ -1,10 +1,15 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 
-
+/**
+ * Class SocialNetwork
+ * @author  IT Prouds & CO.
+ *
+ */
 public class SocialNetwork extends Information {
  
 	/**
-	 * @param size
+	 * Initializes social network item with a size
+	 * @param size The size of social network item.
 	 */
 	public SocialNetwork(int size) {
 		super(size);
@@ -12,7 +17,7 @@ public class SocialNetwork extends Information {
 	}
 
 	/**
-	 * //affiche les informations sur le network choisis
+	 * Display informations about the choosen social network.
 	 */
 	public void displayNetwork() {
 
