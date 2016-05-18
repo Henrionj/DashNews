@@ -15,5 +15,14 @@ public class Page {
 	public void actualize(State state) {
 	
 	}
+	
+	/**
+	 * Add an item to the page
+	 * @param item The item to add
+	 */
+	public void setItem(Item item) {
+		this.mesItems.add(item);
+	}
 
+	
 }
