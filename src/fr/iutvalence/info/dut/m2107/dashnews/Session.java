@@ -11,6 +11,7 @@ public class Session {
 	 * Privileges for the current session.
 	 */
 	private String privileges;
+	
 	/**
 	 * Login for the current session.
 	 */
