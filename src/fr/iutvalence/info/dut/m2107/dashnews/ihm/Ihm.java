@@ -1,6 +1,11 @@
 package fr.iutvalence.info.dut.m2107.dashnews.ihm;
 
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -14,20 +19,25 @@ public class Ihm extends JFrame
 	
 public Ihm()
 {
+	
+	/*
+	 * Caracteristics of the Ihm
+	 */
+	
 	this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
 	this.setTitle("DashNews");
 	this.setSize(800, 600);
 	this.setLocationRelativeTo(null);  
 //	this.setUndecorated(true);
 	JPanel board = new JPanel();
-	JPanel header = new JPanel();
 	board.setPreferredSize(board.getMaximumSize());
-	//board.setLayout(new GridBagLayout());
-	GridBagConstraints constraint = new GridBagConstraints();
 	
+	Font titleFont = new Font("TimesRoman",Font.BOLD,30);
+	/*
+	 * tabs of the Ihm
+	 */
 	JTabbedPane tabs = new JTabbedPane(SwingConstants.TOP);
 	tabs.setUI(new TabStyle());
-	JLabel title = new JLabel("DASHNEWS");
 	
 	Page stocks = new Page("Stocks");
 	Page numbers = new Page("Chiffres");
@@ -40,42 +50,49 @@ public Ihm()
 	tabs.addTab(command.getName(), command);
 	tabs.setOpaque(true);
 	
-	header.add(title);
+	
+	JPanel header = new JPanel();
+	header.setLayout(new GridBagLayout());
+	header.setPreferredSize(new Dimension(800,50));
+	GridBagConstraints constraints = new GridBagConstraints();
+	
+	
+	JLabel title = new JLabel("DASHNEWS");
+	title.setFont(titleFont);
+	JLabel calendar = new JLabel("Calendar");
+	JLabel authentification = new JLabel("Authentification");
+	
+	//--------------------------------------------
+	title.setPreferredSize(new Dimension(300,50));
+	calendar.setPreferredSize(new Dimension(200,50));
+	authentification.setPreferredSize(new Dimension(200,50));
+	
+	
+	constraints.gridx = 0;
+	constraints.gridy = 0;	
+    constraints.gridheight = 1;
+    constraints.gridwidth = 1;
+	header.add(title, constraints);
+
+	//---------------------------------------------
+
+	constraints.gridx = 1;
+	header.add(calendar, constraints);
+
+	//---------------------------------------------
+
+	constraints.gridx = 2;      
+	header.add(authentification, constraints);        
+
+	//---------------------------------------------
+	constraints.gridwidth = GridBagConstraints.REMAINDER;
+	
+	
 	
 	board.add(header);
 	board.add(tabs);
-	
 	this.setResizable(false);
 	this.setContentPane(board);
-	
-	/*JButton nom = new JButton("Nom de l'entreprise");
-	JButton calendrier = new JButton("Calendrier");
-	JButton authentification = new JButton("Authentification");
-	nom.setLocation(-50, 0);*/
-	
-	//nom.setPreferredSize(new Dimension(300, 100));
-	
-	/*constraint.gridx = 0;
-    constraint.gridy = 0;
-    constraint.gridheight = 4;
-    constraint.gridwidth = 4;
-    constraint.gridwidth = GridBagConstraints.REMAINDER;
-    board.add(nom, constraint);
-    
-    
-    constraint.gridx = 5;
-    constraint.gridy = 0;
-    constraint.gridheight = 1;
-    constraint.gridwidth = 1;
-    board.add(calendrier, constraint);
-    
-    constraint.gridx = 7;
-    constraint.gridy = 0;
-    constraint.gridheight =4;
-    constraint.gridwidth = 4;
-    board.add(authentification, constraint);
-    constraint.gridwidth = GridBagConstraints.REMAINDER;*/
-    
 	this.setVisible(true);	
 
 }

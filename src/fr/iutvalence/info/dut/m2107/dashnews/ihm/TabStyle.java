@@ -13,7 +13,8 @@ public class TabStyle extends BasicTabbedPaneUI
 {
 
 	 private FontMetrics boldFontMetrics;
-     private Font boldFont;
+     private Font tabFont ;
+    
      
      /**
       * La méthode paintTabBackground permet de changer la couleur de
@@ -99,8 +100,8 @@ public class TabStyle extends BasicTabbedPaneUI
              tabAreaInsets.left = 0;
              selectedTabPadInsets = new Insets(0, 0, 0, 0);
              tabInsets = selectedTabPadInsets;
-             boldFont = tabPane.getFont().deriveFont(Font.BOLD);
-             boldFontMetrics = tabPane.getFontMetrics(boldFont);
+             tabFont = new Font(" TimesRoman ",Font.BOLD,20);
+             boldFontMetrics = tabPane.getFontMetrics(tabFont);
      }
      
      /**
@@ -112,11 +113,11 @@ public class TabStyle extends BasicTabbedPaneUI
          int vDifference = (int)(boldFontMetrics.getStringBounds(title,g).getWidth()) 
          - textRect.width;
          textRect.x -= (vDifference / 2);
-         super.paintText(g, tabPlacement, boldFont, boldFontMetrics, tabIndex, 
+         super.paintText(g, tabPlacement, tabFont, boldFontMetrics, tabIndex, 
          title, textRect, isSelected);
        }
        else
-         super.paintText(g, tabPlacement, font, metrics, tabIndex, title, textRect, 
+         super.paintText(g, tabPlacement, tabFont, metrics, tabIndex, title, textRect, 
          isSelected);
      }
      
