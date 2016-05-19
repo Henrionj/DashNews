@@ -5,8 +5,8 @@ public class Indicator extends Information {
 	/**
 	 * @param size
 	 */
-	public Indicator(int size) {
-		super(size);
+	public Indicator(int length, int height) {
+		super(length,height);
 		// TODO Auto-generated constructor stub
 	}
 

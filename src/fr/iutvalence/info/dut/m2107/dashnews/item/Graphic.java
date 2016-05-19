@@ -40,8 +40,8 @@ public class Graphic extends Item {
 	 * Creates a graphic.
 	 * @param size
 	 */
-	public Graphic(int size) {
-		super(size);
+	public Graphic(int length, int height) {
+		super(length,height);
 		// TODO Auto-generated constructor stub
 	}
 
