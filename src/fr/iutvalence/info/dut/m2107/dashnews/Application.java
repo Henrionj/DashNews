@@ -27,6 +27,12 @@ public class Application {
 	 */
 	private String companyName;
 	
+	public Application(String login, String password, String companyName)
+	{
+		this.mySession = new Session(login, password);
+		this.companyName = companyName;
+	}
+	
 	/**
 	 * 
 	 */

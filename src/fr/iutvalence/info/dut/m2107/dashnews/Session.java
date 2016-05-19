@@ -21,9 +21,8 @@ public class Session {
 	 */
 	private String password;
 	
-	public Session(String privileges, String login, String password)
+	public Session(String login, String password)
 	{
-		this.privileges = privileges;
 		this.login = login;
 		this.password = password;
 	}
