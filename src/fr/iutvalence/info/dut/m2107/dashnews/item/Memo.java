@@ -16,8 +16,8 @@ public class Memo extends Item {
 	 * Creates a new memo with a size.
 	 * @param size The size of the memo.
 	 */
-	public Memo(int size) {
-		super(size);
+	public Memo(int length, int height) {
+		super(length,height);
 		this.text = "Cliquez here to write";
 	}
 	
@@ -26,9 +26,9 @@ public class Memo extends Item {
 	 * @param size The size of the new memo.
 	 * @param text The message of the new memo.
 	 */
-	public Memo(int size, String text)
+	public Memo(int length, int height, String text)
 	{
-		super(size);
+		super(length,height);
 		this.text = text;
 		System.out.println(text+"\n"+getDateAjout());
 	}

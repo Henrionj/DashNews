@@ -8,10 +8,15 @@ import java.util.*;
 public class Calendar extends Item {
 	
 	/**
-	 * Default Calendar's size (to define)
+	 * Default Calendar's size 
 	 */
-	private final static int CALENDAR_SIZE = 0;
+	private final static int CALENDAR_LENGHT = 0;
 
+	/**
+	 * Default Calendar's size 
+	 */
+	private final static int CALENDAR_HEIGHT = 0;
+	
 	/**
 	 * Calendar's list of notifications
 	 */
@@ -27,7 +32,7 @@ public class Calendar extends Item {
 	 * @param name 
 	 */
 	public Calendar(String name) {
-		super(CALENDAR_SIZE);
+		super(CALENDAR_LENGHT,CALENDAR_HEIGHT);
 		this.nameCalendrier=name;
 		this.myNotifications=null;
 	}

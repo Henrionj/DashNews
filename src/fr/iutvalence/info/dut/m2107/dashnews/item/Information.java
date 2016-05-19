@@ -13,13 +13,13 @@ public abstract class Information extends Item {
 	 */
 	private String name;
 
-	// TODO Pourquoi la taille en paramètre de l'item
+	// TODO Pourquoi la taille en paramï¿½tre de l'item
 	/**
 	 * 
 	 * @param size
 	 */
-	public Information(int size) {
-		super(size);
+	public Information(int length, int height) {
+		super(length,height);
 		// TODO Auto-generated constructor stub
 	}
 

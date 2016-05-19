@@ -8,18 +8,21 @@ import java.util.Date;
  */
 public abstract class Item {
  
-	private int size;
+	private int length;
+	private int height;
 	private Date addingDate;
 
 
 	/**
 	 * Creates an item.
-	 * @param size
+	 * @param length 
+	 * @param height 
 	 */
-	public Item(int size) {
+	public Item(int length, int height) {
 		
-		this.size = size;
-		addingDate = new Date();
+		this.length = length;
+		this.height = height;
+		this.addingDate = java.util.Calendar.getInstance().getTime();
 		this.actualize();
 		this.display();
 	}
@@ -44,22 +47,32 @@ public abstract class Item {
 	 * @return addingDate The creation date of an item. 
 	 */
 	public Date getDateAjout() {
-		return addingDate;
+		return this.addingDate;
 	}
 
 	/**
-	 * Get the size of an item.
-	 * @return size The size of an item.
+	 * Get the length of an item.
+	 * @return The length of an item.
 	 */
-	public int getSize() {
-		return size;
+	public int getLength() {
+		return this.length;
+	}
+	
+	/**
+	 * Get the height of an item.
+	 * @return The height of an item.
+	 */
+	public int getHeight() {
+		return this.height;
 	}
 
 	/**
 	 * Modifies the size of an item.
-	 * @param size The new size of the item.
+	 * @param length 
+	 * @param height 
 	 */
-	protected void setSize(int size) {
-		this.size = size;
+	protected void setSize(int length, int height) {
+		this.length = length;
+		this.height = height;
 	}
 }
