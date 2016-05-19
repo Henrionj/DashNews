@@ -10,7 +10,7 @@ public class Session {
 	/**
 	 * Privileges for the current session.
 	 */
-	private String privilèges;
+	private String privileges;
 	/**
 	 * Login for the current session.
 	 */
@@ -19,6 +19,13 @@ public class Session {
 	 * Password for the current session.
 	 */
 	private String password;
+	
+	public Session(String privileges, String login, String password)
+	{
+		this.privileges = privileges;
+		this.login = login;
+		this.password = password;
+	}
 	
 	/**
 	 * Authentificates for the current session.
