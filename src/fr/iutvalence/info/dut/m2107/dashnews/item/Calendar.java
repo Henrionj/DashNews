@@ -1,21 +1,35 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.*;
  
+/**
+ * @author IT Prouds & CO.
+ *
+ */
 public class Calendar extends Item {
+	
+	/**
+	 * Default Calendar's size (to define)
+	 */
+	private final static int CALENDAR_SIZE = 0;
 
-	DateFormat date = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
-	Date currentdate = new Date();
-	Collection<Notification> maNotification;
+	/**
+	 * Calendar's list of notifications
+	 */
+	Collection<Notification> myNotifications;
+	
+	/**
+	 * Calendar's name 
+	 */
 	private String nameCalendrier;
 	
 	/**
 	 * @param size
+	 * @param name 
 	 */
-	public Calendar(int size, String name) {
-		super(size);
+	public Calendar(String name) {
+		super(CALENDAR_SIZE);
 		this.nameCalendrier=name;
+		this.myNotifications=null;
 	}
 	
 	/**
@@ -24,17 +38,19 @@ public class Calendar extends Item {
 	 */
 	public void addNotification(Notification notif)
 	{
-		this.maNotification.add(notif);
+		this.myNotifications.add(notif);
 	}
 	
-	// TODO
+	/**
+	 * Check if a notification is available
+	 */
 	private void notifyVerification() 
 	{
-		for(Notification notification : maNotification)
+		for(Notification notification : this.myNotifications)
 		{ 
 			if (notification.getDate()==java.util.Calendar.getInstance().getTime())
 			{
-				//display notif
+				javax.swing.JOptionPane.showMessageDialog(null,notification.toString()); 
 			}
 		}
 	}

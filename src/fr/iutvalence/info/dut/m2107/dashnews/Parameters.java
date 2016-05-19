@@ -1,14 +1,27 @@
 package fr.iutvalence.info.dut.m2107.dashnews;
-public class Parametres {
 
+/**
+ * Class Parameters.
+ * @author  IT Prouds & CO.
+ *
+ */
+public class Parameters {
+
+	//TODO Qu'est-ce ?
+	/**
+	 * 
+	 */
 	private String[] StringThemeArray;
 
+	/**
+	 * Changes the color of the theme.
+	 */
 	public void changeColor() {
 
 	}
  
 	/**
-	 * 
+	 * Creates a new theme.
 	 * @param theme
 	 */
 	public void createTheme(String theme) {
