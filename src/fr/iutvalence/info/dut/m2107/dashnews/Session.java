@@ -10,7 +10,7 @@ public class Session {
 	/**
 	 * Privileges for the current session.
 	 */
-	private String privileges;
+	private Privileges privileges;
 	
 	/**
 	 * Login for the current session.
@@ -25,6 +25,7 @@ public class Session {
 	{
 		this.login = login;
 		this.password = password;
+		this.privileges = Privileges.DEFAULT_USER;
 	}
 	
 	/**
@@ -32,6 +33,11 @@ public class Session {
 	 */
 	public void authentification() {
 
+	}
+
+	public Privileges getPrivileges() {
+		// TODO Auto-generated method stub
+		return this.privileges;
 	}
 
 }

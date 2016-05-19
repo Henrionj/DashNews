@@ -45,7 +45,7 @@ public class Application {
 	 * Checks if user has enough privileges.
 	 */
 	public void checkPrivileges() {
-		
+		Privileges privileges = this.mySession.getPrivileges();
 	}
 	
 	/**
