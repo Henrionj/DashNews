@@ -1,6 +1,7 @@
 package fr.iutvalence.info.dut.m2107.dashnews;
 import java.util.*;
 
+import fr.iutvalence.info.dut.m2107.dashnews.ihm.Page;
 import fr.iutvalence.info.dut.m2107.dashnews.item.Item;
  
 public class Application {
