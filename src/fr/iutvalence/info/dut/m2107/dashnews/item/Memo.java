@@ -1,5 +1,6 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 
+
 /**
  * Class Memo.
  * @author  IT Prouds & CO.
@@ -18,7 +19,7 @@ public class Memo extends Item {
 	 */
 	public Memo(int length, int height) {
 		super(length,height);
-		this.text = "Cliquez here to write";
+		this.text = "Click here to write";
 	}
 	
 	/**

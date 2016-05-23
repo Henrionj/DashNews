@@ -17,6 +17,7 @@ public abstract class Item {
 	 * Creates an item.
 	 * @param length 
 	 * @param height 
+	 * 
 	 */
 	public Item(int length, int height) {
 		
@@ -25,6 +26,7 @@ public abstract class Item {
 		this.addingDate = java.util.Calendar.getInstance().getTime();
 		this.actualize();
 		this.display();
+		
 	}
 
 	/**
@@ -75,4 +77,5 @@ public abstract class Item {
 		this.length = length;
 		this.height = height;
 	}
+	
 }

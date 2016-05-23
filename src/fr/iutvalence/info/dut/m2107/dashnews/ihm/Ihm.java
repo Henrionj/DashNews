@@ -36,13 +36,21 @@ public Ihm()
 	/*
 	 * tabs of the Ihm
 	 */
-	JTabbedPane tabs = new JTabbedPane(SwingConstants.TOP);
+	JTabbedPane tabs = new JTabbedPane(SwingConstants.TOP);// menu
 	tabs.setUI(new TabStyle());
 	
 	Page stocks = new Page("Stocks");
 	Page numbers = new Page("Chiffres");
+	/*
+	 * INDICATEURS	rse
+	 *     Ils permettent de connaître l’efficacité de la production
+    Ils éclairent sur la qualité de la relation commerciale, du service client
+    Ils mesurent l’image de marque et la perception de l’entreprise
+    Ils fournissent des informations sur la qualité de services
+    Ils permettent de mettre en lumière le temps passé à corriger les erreurs, les mauvaises anticipations
+	 */
 	Page indicator = new Page("Indicateurs");
-	Page command = new Page("Commandes");
+	Page command = new Page("Commandes"); 
 	
 	tabs.addTab(numbers.getName(), numbers);
 	tabs.addTab(stocks.getName(), stocks);
@@ -67,11 +75,15 @@ public Ihm()
 	calendar.setPreferredSize(new Dimension(200,50));
 	authentification.setPreferredSize(new Dimension(200,50));
 	
+	//-----------------------------------------------
 	
 	constraints.gridx = 0;
 	constraints.gridy = 0;	
     constraints.gridheight = 1;
     constraints.gridwidth = 1;
+    
+    //---------------------------------------------
+    
 	header.add(title, constraints);
 
 	//---------------------------------------------

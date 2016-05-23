@@ -1,5 +1,6 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 
+
 /**
  * Class SocialNetwork
  * @author  IT Prouds & CO.

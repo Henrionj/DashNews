@@ -1,5 +1,5 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
-import java.util.*;
+import java.util.Collection;
  
 /**
  * @author IT Prouds & CO.

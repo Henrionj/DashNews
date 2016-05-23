@@ -22,11 +22,10 @@ public class TabStyle extends BasicTabbedPaneUI
       */
      protected void paintTabBackground(Graphics g, int tabPlacement,
      int tabIndex, int x, int y, int w, int h, boolean isSelected) {
-       Rectangle rect = new Rectangle();
        g.setColor(new Color(170,180,179));
        g.fillRect(x, y, w, h);
        if(isSelected) {
-         g.setColor(new Color(62,193,189));
+         g.setColor(new Color(216,37,37));
          g.fillRect(x, y, w, h);
        }
      }
@@ -38,8 +37,7 @@ public class TabStyle extends BasicTabbedPaneUI
       */
      protected void paintTabBorder(Graphics g, int tabPlacement,
      int tabIndex, int x, int y, int w, int h, boolean isSelected) {
-       Rectangle rect = getTabBounds(tabIndex, new Rectangle(x, y, w, h));
-       g.setColor(new Color(19,19,19));
+
        g.drawRect(x, y, w, h);
        if(isSelected)
          g.setColor(new Color(121,134,133));
@@ -59,8 +57,6 @@ public class TabStyle extends BasicTabbedPaneUI
       */
      protected int calculateTabHeight(int tabPlacement, int tabIndex, int fontHeight) {
        int vHeight = fontHeight;
-       if (vHeight % 2 > 0)
-         vHeight += 2;
        return vHeight+25;
      }
      
@@ -110,10 +106,8 @@ public class TabStyle extends BasicTabbedPaneUI
      protected void paintText(Graphics g, int tabPlacement, Font font, FontMetrics 
      metrics, int tabIndex, String title, Rectangle textRect, boolean isSelected) {
        if (isSelected) {   
-         int vDifference = (int)(boldFontMetrics.getStringBounds(title,g).getWidth()) 
-         - textRect.width;
-         textRect.x -= (vDifference / 2);
-         super.paintText(g, tabPlacement, tabFont, boldFontMetrics, tabIndex, 
+    	
+         super.paintText(g, tabPlacement, tabFont, metrics, tabIndex, 
          title, textRect, isSelected);
        }
        else
