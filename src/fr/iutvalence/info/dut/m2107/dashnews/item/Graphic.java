@@ -89,7 +89,7 @@ public class Graphic extends Item {
         // Draw lines.
         double xInc = (double)(w - 2*PAD)/(data.length-1);
         double scale = (double)(h - 2*PAD)/getMax();
-        g2.setPaint(Color.green.darker());
+        g2.setPaint(Color.blue.darker());
         for(int i = 0; i < data.length-1; i++)
         {
             double x1 = PAD + i*xInc;

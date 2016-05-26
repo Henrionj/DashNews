@@ -6,17 +6,6 @@ import java.util.*;
  *
  */
 public class Calendar extends Item {
-	
-	/**
-	 * Default Calendar's size 
-	 */
-	private final static int CALENDAR_LENGHT = 0;
-
-	/**
-	 * Default Calendar's size 
-	 */
-	private final static int CALENDAR_HEIGHT = 0;
-	
 	/**
 	 * Calendar's list of notifications
 	 */
