@@ -11,7 +11,7 @@ import fr.iutvalence.info.dut.m2107.dashnews.item.Item;
 public class Page {
  
 	/**
-	 * Colection of items.
+	 * Collection of items.
 	 */
 	Collection<Item> mesItems;
 	/**
