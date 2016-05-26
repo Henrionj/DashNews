@@ -33,8 +33,9 @@ public class Application {
 		this.companyName = companyName;
 	}
 	
+	// TODO What ?
 	/**
-	 * 
+	 *
 	 */
 	public void create() {
 	

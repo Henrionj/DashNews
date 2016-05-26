@@ -21,6 +21,11 @@ public class Session {
 	 */
 	private String password;
 	
+	/**
+	 * Initializes a session with a login and a password.
+	 * @param login Login of the user.
+	 * @param password Password of the user.
+	 */
 	public Session(String login, String password)
 	{
 		this.login = login;
@@ -35,6 +40,10 @@ public class Session {
 
 	}
 
+	/**
+	 * Gets the privileges of a user.
+	 * @return
+	 */
 	public Privileges getPrivileges() {
 		// TODO Auto-generated method stub
 		return this.privileges;
