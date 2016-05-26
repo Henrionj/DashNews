@@ -18,7 +18,7 @@ public class Memo extends Item {
 	 */
 	public Memo(int size) {
 		super(size);
-		this.text = "Cliquez here to write";
+		this.text = "Clic here to write";
 	}
 	
 	/**
