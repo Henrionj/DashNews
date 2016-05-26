@@ -14,13 +14,9 @@ public class Memo extends Item {
 
 	/**
 	 * Creates a new memo with a size.
-	 * @param size The size of the memo.
+	 * @param length The length of the memo.
+	 * @param height The height of the memo.
 	 */
-	public Memo(int size) {
-		super(size, size);
-		this.text = "Clic here to write";
-	}
-	
 	public Memo(int length, int height) {
 		super(length,height);
 		this.text = "Clic here to write";
