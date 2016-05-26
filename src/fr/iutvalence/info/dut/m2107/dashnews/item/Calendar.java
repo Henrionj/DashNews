@@ -28,8 +28,8 @@ public class Calendar extends Item {
 	private String nameCalendrier;
 	
 	/**
-	 * @param size
-	 * @param name 
+	 * Creates a calendar with default length and height, a name and without notifications. 
+	 * @param name The name of the calendar.
 	 */
 	public Calendar(String name) {
 		super(CALENDAR_LENGHT,CALENDAR_HEIGHT);

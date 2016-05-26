@@ -15,11 +15,16 @@ public class Memo extends Item {
 
 	/**
 	 * Creates a new memo with a size.
-	 * @param size The size of the memo.
+	 * @param length The length of the memo.
+	 * @param height The height of the memo.
 	 */
 	public Memo(int length, int height) {
 		super(length,height);
+<<<<<<< HEAD
 		this.text = "Click here to write";
+=======
+		this.text = "Clic here to write";
+>>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	}
 	
 	/**

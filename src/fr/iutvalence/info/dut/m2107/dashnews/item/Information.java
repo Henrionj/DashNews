@@ -16,7 +16,8 @@ public abstract class Information extends Item {
 	// TODO Pourquoi la taille en param�tre de l'item
 	/**
 	 * 
-	 * @param size
+	 * @param length
+	 * @param height
 	 */
 	public Information(int length, int height) {
 		super(length,height);

@@ -15,9 +15,14 @@ public abstract class Item {
 
 	/**
 	 * Creates an item.
+<<<<<<< HEAD
 	 * @param length 
 	 * @param height 
 	 * 
+=======
+	 * @param length The length of an item.
+	 * @param height The height of an item.
+>>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	 */
 	public Item(int length, int height) {
 		

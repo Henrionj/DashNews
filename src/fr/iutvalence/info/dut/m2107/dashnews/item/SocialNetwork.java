@@ -10,7 +10,8 @@ public class SocialNetwork extends Information {
  
 	/**
 	 * Initializes social network item with a size
-	 * @param size The size of social network item.
+	 * @param length The length of social network item.
+	 * @param height The height of social network item. 
 	 */
 	public SocialNetwork(int length, int height) {
 		super(length,height);
@@ -18,7 +19,7 @@ public class SocialNetwork extends Information {
 	}
 
 	/**
-	 * Display informations about the choosen social network.
+	 * Display informations about the chosen social network.
 	 */
 	public void displayNetwork() {
 
