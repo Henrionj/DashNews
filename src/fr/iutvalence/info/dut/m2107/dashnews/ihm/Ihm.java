@@ -10,7 +10,9 @@ import java.awt.GridLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
+import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 
@@ -36,7 +38,12 @@ public Ihm()
 	/*
 	 * tabs of the Ihm
 	 */
+	
 	JTabbedPane tabs = new JTabbedPane(SwingConstants.TOP);// menu
+	
+	
+	
+	
 	tabs.setUI(new TabStyle());
 	
 	Page stocks = new Page("Stocks");
@@ -56,6 +63,7 @@ public Ihm()
 	tabs.addTab(stocks.getName(), stocks);
 	tabs.addTab(indicator.getName(), indicator);
 	tabs.addTab(command.getName(), command);
+	
 	tabs.setOpaque(true);
 	
 	
@@ -74,6 +82,8 @@ public Ihm()
 	title.setPreferredSize(new Dimension(300,50));
 	calendar.setPreferredSize(new Dimension(200,50));
 	authentification.setPreferredSize(new Dimension(200,50));
+
+	
 	
 	//-----------------------------------------------
 	
@@ -100,9 +110,24 @@ public Ihm()
 	constraints.gridwidth = GridBagConstraints.REMAINDER;
 	
 	
+	//JScrollPane Scroll = new JScrollPane(tableau);
+	//Scroll.setLocation(500,500);
+	JPanel Array = new JPanel();
+	// Rudy
+	
+	Object[][] Chiffres = {{1,2,3,4,5,6},
+						{2010,2011,2012,2013,2014,2015}};
+	String titre[]={"résultas","années"};
+	JTable tableau = new JTable(Chiffres,titre);
+	Array.add(tableau);
+	Array.setPreferredSize(new Dimension(300,300));
 	
 	board.add(header);
 	board.add(tabs);
+	Array.add(new JScrollPane(tableau));
+	board.add(Array);
+	
+	
 	this.setResizable(false);
 	this.setContentPane(board);
 	this.setVisible(true);	
