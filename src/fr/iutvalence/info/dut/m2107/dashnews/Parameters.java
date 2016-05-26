@@ -22,7 +22,7 @@ public class Parameters {
  
 	/**
 	 * Creates a new theme.
-	 * @param theme
+	 * @param theme The theme for parameters.
 	 */
 	public void createTheme(String theme) {
 
