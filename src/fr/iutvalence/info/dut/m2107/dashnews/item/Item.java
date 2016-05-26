@@ -1,15 +1,15 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 import java.util.Date;
 
+import javax.swing.JPanel;
+
 /**
  * Abstract class Item.
  * @author  IT Prouds & CO.
  *
  */
-public abstract class Item {
+public abstract class Item extends JPanel {
  
-	private int length;
-	private int height;
 	private Date addingDate;
 
 
@@ -18,13 +18,8 @@ public abstract class Item {
 	 * @param length The length of an item.
 	 * @param height The height of an item.
 	 */
-	public Item(int length, int height) {
-		
-		this.length = length;
-		this.height = height;
+	public Item() {
 		this.addingDate = java.util.Calendar.getInstance().getTime();
-		this.actualize();
-		this.display();
 	}
 
 	/**
@@ -50,29 +45,4 @@ public abstract class Item {
 		return this.addingDate;
 	}
 
-	/**
-	 * Get the length of an item.
-	 * @return The length of an item.
-	 */
-	public int getLength() {
-		return this.length;
-	}
-	
-	/**
-	 * Get the height of an item.
-	 * @return The height of an item.
-	 */
-	public int getHeight() {
-		return this.height;
-	}
-
-	/**
-	 * Modifies the size of an item.
-	 * @param length 
-	 * @param height 
-	 */
-	protected void setSize(int length, int height) {
-		this.length = length;
-		this.height = height;
-	}
 }

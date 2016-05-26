@@ -19,8 +19,8 @@ public abstract class Information extends Item {
 	 * @param length
 	 * @param height
 	 */
-	public Information(int length, int height) {
-		super(length,height);
+	public Information() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 

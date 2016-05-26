@@ -18,7 +18,7 @@ public class Memo extends Item {
 	 * @param height The height of the memo.
 	 */
 	public Memo(int length, int height) {
-		super(length,height);
+		super();
 		this.text = "Clic here to write";
 	}
 	
@@ -29,7 +29,7 @@ public class Memo extends Item {
 	 */
 	public Memo(int length, int height, String text)
 	{
-		super(length,height);
+		super();
 		this.text = text;
 		System.out.println(text+"\n"+getDateAjout());
 	}

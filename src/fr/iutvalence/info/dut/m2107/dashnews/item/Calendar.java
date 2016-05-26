@@ -32,7 +32,7 @@ public class Calendar extends Item {
 	 * @param name The name of the calendar.
 	 */
 	public Calendar(String name) {
-		super(CALENDAR_LENGHT,CALENDAR_HEIGHT);
+		super();
 		this.nameCalendrier=name;
 		this.myNotifications=null;
 	}
