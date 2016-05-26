@@ -15,8 +15,8 @@ public abstract class Item {
 
 	/**
 	 * Creates an item.
-	 * @param length 
-	 * @param height 
+	 * @param length The length of an item.
+	 * @param height The height of an item.
 	 */
 	public Item(int length, int height) {
 		
