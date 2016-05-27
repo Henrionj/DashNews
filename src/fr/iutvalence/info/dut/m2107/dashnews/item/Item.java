@@ -8,18 +8,29 @@ import javax.swing.JPanel;
  * @author  IT Prouds & CO.
  *
  */
-public abstract class Item extends JPanel {
+public abstract class Item {
  
 	private Date addingDate;
 
-
+	/**
+	 * Item's length
+	 */
+	private int length;
+	
+	/**
+	 * Item's height
+	 */
+	private int height;
+	
 	/**
 	 * Creates an item.
 	 * @param length The length of an item.
 	 * @param height The height of an item.
 	 */
-	public Item() {
+	public Item(int length,int height) {
 		this.addingDate = java.util.Calendar.getInstance().getTime();
+		this.length=length;
+		this.height=height;
 	}
 
 	/**

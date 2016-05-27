@@ -1,15 +1,16 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
-import java.util.*;
+
  
 /**
  * @author IT Prouds & CO.
  *
  */
 public class Calendar extends Item {
+	
 	/**
-	 * Calendar's list of notifications
+	 * Default Calendar's number of Years
 	 */
-	Collection<Notification> myNotifications;
+	private static final int NUMBER_OF_YEAR = 3;
 	
 	/**
 	 * Calendar's name 
@@ -17,36 +18,41 @@ public class Calendar extends Item {
 	private String nameCalendrier;
 	
 	/**
+	 * Table which stores Years
+	 */
+	private Year[] myYears;
+	
+	/**
 	 * Creates a calendar with default length and height, a name and without notifications. 
 	 * @param name The name of the calendar.
 	 */
-	public Calendar(String name) {
-		super();
+	public Calendar(String name,int length,int height)
+	{
+		super(length,height);
+		
 		this.nameCalendrier=name;
-		this.myNotifications=null;
-	}
-	
-	/**
-	 * Add a notification to the Calendar
-	 * @param notif The notification to add
-	 */
-	public void addNotification(Notification notif)
-	{
-		this.myNotifications.add(notif);
-	}
-	
-	/**
-	 * Check if a notification is available
-	 */
-	private void notifyVerification() 
-	{
-		for(Notification notification : this.myNotifications)
-		{ 
-			if (notification.getDate()==java.util.Calendar.getInstance().getTime())
-			{
-				javax.swing.JOptionPane.showMessageDialog(null,notification.toString()); 
-			}
+		
+		this.myYears=new Year[NUMBER_OF_YEAR];
+		
+		for (int i = 2015; i < 2018; i++)
+		{
+			this.myYears[i-2015] = new Year(i);
 		}
 	}
 
+	/**
+	 * Name getter
+	 * @return Calendar's name
+	 */
+	public String getNameCalendrier() {
+		return nameCalendrier;
+	}
+
+	/**
+	 * Years getter
+	 * @return Calendar's Years
+	 */
+	public Year[] getMyYears() {
+		return myYears;
+	}
 }
