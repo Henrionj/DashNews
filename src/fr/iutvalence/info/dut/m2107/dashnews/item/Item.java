@@ -1,6 +1,8 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 import java.util.Date;
 
+import javax.swing.JPanel;
+
 /**
  * Abstract class Item.
  * @author  IT Prouds & CO.
@@ -8,11 +10,18 @@ import java.util.Date;
  */
 public abstract class Item {
  
-	private int length;
-	private int height;
 	private Date addingDate;
 
-
+	/**
+	 * Item's length
+	 */
+	private int length;
+	
+	/**
+	 * Item's height
+	 */
+	private int height;
+	
 	/**
 	 * Creates an item.
 <<<<<<< HEAD
@@ -24,14 +33,16 @@ public abstract class Item {
 	 * @param height The height of an item.
 >>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	 */
-	public Item(int length, int height) {
-		
-		this.length = length;
-		this.height = height;
+	public Item(int length,int height) {
 		this.addingDate = java.util.Calendar.getInstance().getTime();
+<<<<<<< HEAD
 		this.actualize();
 		this.display();
 		
+=======
+		this.length=length;
+		this.height=height;
+>>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	}
 
 	/**
@@ -57,6 +68,7 @@ public abstract class Item {
 		return this.addingDate;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Get the length of an item.
 	 * @return The length of an item.
@@ -84,3 +96,6 @@ public abstract class Item {
 	}
 	
 }
+=======
+}
+>>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git

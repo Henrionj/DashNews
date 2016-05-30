@@ -11,7 +11,7 @@ public class Indicator extends Information {
 	 * @param length
 	 * @param height
 	 */
-	public Indicator(int length, int height) {
+	public Indicator(int length,int height) {
 		super(length,height);
 		// TODO Auto-generated constructor stub
 	}

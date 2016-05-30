@@ -1,5 +1,20 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 
+<<<<<<< HEAD
+=======
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+
+import javax.swing.JFrame;
+
+>>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 
 /**
  * Class Graphic.
@@ -7,43 +22,45 @@ package fr.iutvalence.info.dut.m2107.dashnews.item;
  *
  */
 public class Graphic extends Item {
-	//TODO Qu'est-ce ?
+	
 	/**
-	 * 
+	 * The graphic's data
 	 */
-	private int dataArray;
-	//TODO Qu'est-ce ?
+	int[] data;
+		
 	/**
-	 * 
+	 * Enable to insert new data on the graphic
 	 */
-	private int[] abscisse;
-	//TODO Qu'est-ce ?
-	/**
-	 * 
-	 */
-	private int[] ordonnee;
-
-	/**
-	 * Orders by ascending order.
-	 */
-	public void sortAscending() {
-
+	public void insertData(int[] data)
+	{
+		for (int i = 0; i < data.length; i++)
+		{
+			this.data[i]=data[i];
+		}
 	}
 	
 	/**
-	 * Orders by descending order.
+	 * Graphic's constructor
 	 */
-	public void sortDescending() {
-
-	}
-
-	/**
-	 * Creates a graphic.
-	 * @param size
-	 */
-	public Graphic(int length, int height) {
+	public Graphic(int length,int height)
+	{
 		super(length,height);
-		// TODO Auto-generated constructor stub
+		this.data=new int[20];
 	}
-
+	
+	
+	/**
+	 * Max value getter
+	 * @return data's max value
+	 */
+	private int getMaxValue() 
+	{
+        int max = -Integer.MAX_VALUE;
+        for(int i = 0; i < data.length; i++) 
+        {
+            if(data[i] > max)
+                max = data[i];
+        }
+        return max;
+    }
 }
