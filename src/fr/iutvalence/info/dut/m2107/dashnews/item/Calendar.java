@@ -1,6 +1,5 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 
-
  
 /**
  * @author IT Prouds & CO.
@@ -39,8 +38,12 @@ public class Calendar extends Item {
 		{
 			this.myYears[i-2015] = new Year(i);
 		}
+
 	}
 
+
+
+	
 
 
 	/**

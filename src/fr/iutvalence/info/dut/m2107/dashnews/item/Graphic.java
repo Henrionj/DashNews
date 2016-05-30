@@ -1,8 +1,5 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 
-
-
-
 /**
  * Class Graphic.
  * @author  IT Prouds & CO.
