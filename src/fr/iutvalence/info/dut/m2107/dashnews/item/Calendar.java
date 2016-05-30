@@ -1,9 +1,6 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
-<<<<<<< HEAD
 import java.util.Collection;
-=======
 
->>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
  
 /**
  * @author IT Prouds & CO.
@@ -44,9 +41,6 @@ public class Calendar extends Item {
 		}
 	}
 
-<<<<<<< HEAD
-}
-=======
 	/**
 	 * Name getter
 	 * @return Calendar's name
@@ -63,4 +57,3 @@ public class Calendar extends Item {
 		return myYears;
 	}
 }
->>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git

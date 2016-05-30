@@ -24,25 +24,16 @@ public abstract class Item {
 	
 	/**
 	 * Creates an item.
-<<<<<<< HEAD
-	 * @param length 
-	 * @param height 
-	 * 
-=======
 	 * @param length The length of an item.
 	 * @param height The height of an item.
->>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	 */
 	public Item(int length,int height) {
 		this.addingDate = java.util.Calendar.getInstance().getTime();
-<<<<<<< HEAD
 		this.actualize();
 		this.display();
 		
-=======
 		this.length=length;
 		this.height=height;
->>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	}
 
 	/**
@@ -68,7 +59,6 @@ public abstract class Item {
 		return this.addingDate;
 	}
 
-<<<<<<< HEAD
 	/**
 	 * Get the length of an item.
 	 * @return The length of an item.
@@ -96,6 +86,4 @@ public abstract class Item {
 	}
 	
 }
-=======
-}
->>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
+
