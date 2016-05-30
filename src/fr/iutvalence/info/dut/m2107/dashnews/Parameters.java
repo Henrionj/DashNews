@@ -9,7 +9,7 @@ public class Parameters {
 
 	//TODO Qu'est-ce ?
 	/**
-	 * List of theme possible
+	 * List of themes possible
 	 */
 	private String[] StringThemeArray;
 

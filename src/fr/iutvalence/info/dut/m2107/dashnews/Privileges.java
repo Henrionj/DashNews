@@ -12,7 +12,7 @@ public enum Privileges
 	 */
 	DEFAULT_USER,
 	/**
-	 * SUper user defined when a user has privileges.
+	 * Super user defined when a user has privileges.
 	 */
 	SUPER_USER;
 }
