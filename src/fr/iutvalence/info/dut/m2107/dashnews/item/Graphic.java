@@ -47,4 +47,10 @@ public class Graphic extends Item {
         }
         return max;
     }
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
+	}
 }

@@ -46,8 +46,8 @@ public Ihm()
 	
 	tabs.setUI(new TabStyle());
 	
-	Page stocks = new Page("Stocks");
-	Page numbers = new Page("Chiffres");
+	Page stocks = new StockPage("Stocks");
+	Page numbers = new NumberPage("Chiffres");
 	/*
 	 * INDICATEURS	rse
 	 *     Ils permettent de connaître l’efficacité de la production
@@ -56,8 +56,8 @@ public Ihm()
     Ils fournissent des informations sur la qualité de services
     Ils permettent de mettre en lumière le temps passé à corriger les erreurs, les mauvaises anticipations
 	 */
-	Page indicator = new Page("Indicateurs");
-	Page command = new Page("Commandes"); 
+	Page indicator = new IndicatorPage("Indicateurs");
+	Page command = new CommandPage("Commandes"); 
 	
 	tabs.addTab(numbers.getName(), numbers);
 	tabs.addTab(stocks.getName(), stocks);
@@ -110,22 +110,8 @@ public Ihm()
 	constraints.gridwidth = GridBagConstraints.REMAINDER;
 	
 	
-	//JScrollPane Scroll = new JScrollPane(tableau);
-	//Scroll.setLocation(500,500);
-	JPanel Array = new JPanel();
-	// Rudy
-	
-	Object[][] Chiffres = {{1,2,3,4,5,6},
-						{2010,2011,2012,2013,2014,2015}};
-	String titre[]={"résultas","années"};
-	JTable tableau = new JTable(Chiffres,titre);
-	Array.add(tableau);
-	Array.setPreferredSize(new Dimension(300,300));
-	
 	board.add(header);
 	board.add(tabs);
-	Array.add(new JScrollPane(tableau));
-	board.add(Array);
 	
 	
 	this.setResizable(false);

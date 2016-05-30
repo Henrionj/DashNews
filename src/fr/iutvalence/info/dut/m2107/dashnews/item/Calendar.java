@@ -1,5 +1,4 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
-import java.util.Collection;
 
  
 /**
@@ -39,7 +38,13 @@ public class Calendar extends Item {
 		{
 			this.myYears[i-2015] = new Year(i);
 		}
+
 	}
+
+
+
+	
+
 
 	/**
 	 * Name getter
@@ -55,5 +60,13 @@ public class Calendar extends Item {
 	 */
 	public Year[] getMyYears() {
 		return myYears;
+	}
+
+
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
 	}
 }
