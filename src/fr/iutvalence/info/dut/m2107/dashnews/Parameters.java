@@ -3,6 +3,7 @@ package fr.iutvalence.info.dut.m2107.dashnews;
 /**
  * Class Parameters.
  * @author  IT Prouds & CO.
+ * @version v1
  *
  */
 public class Parameters {
