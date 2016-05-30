@@ -20,11 +20,9 @@ public class Memo extends Item {
 	 */
 	public Memo(int length, int height) {
 		super(length,height);
-<<<<<<< HEAD
+
 		this.text = "Click here to write";
-=======
 		this.text = "Clic here to write";
->>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	}
 	
 	/**
@@ -37,6 +35,12 @@ public class Memo extends Item {
 		super(length,height);
 		this.text = text;
 		System.out.println(text+"\n"+getDateAjout());
+	}
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
