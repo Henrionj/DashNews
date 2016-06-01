@@ -7,13 +7,20 @@ package fr.iutvalence.info.dut.m2107.dashnews;
  *
  */
 public class Parameters {
-
+	
 	//TODO Qu'est-ce ?
 	/**
 	 * List of themes possible
 	 */
 	private String[] StringThemeArray;
-
+	
+	/**
+	 * Constructor
+	 */
+	public Parameters(){
+		this.StringThemeArray = null;
+	}
+	
 	/**
 	 * Changes the color of the theme.
 	 */

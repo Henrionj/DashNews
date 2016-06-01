@@ -89,6 +89,16 @@ public abstract class Item{
 	public int getHeight() {
 		return this.height;
 	}
+	
+	
+	/**
+	 * name setter
+	 * @param name the name to set
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
 	
 }

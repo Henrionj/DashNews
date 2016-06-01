@@ -3,6 +3,8 @@
  */
 package fr.iutvalence.info.dut.m2107.dashnews.ihm;
 
+import fr.iutvalence.info.dut.m2107.dashnews.item.*;
+
 /**
  * @author henrionj
  *
@@ -14,7 +16,8 @@ public class StockPage extends Page {
 	 */
 	public StockPage(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
+		this.items.add(new Memo(10,10));
+		this.items.add(new SocialNetwork(10,10));
 	}
 
 	@Override
