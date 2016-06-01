@@ -39,7 +39,6 @@ public class IndicatorPage extends Page {
 			constraints.gridy = items.get(i).getHeight();	
 		    constraints.gridheight = 1;
 		    constraints.gridwidth = 1;
-		    this.add(items.get(i),constraints);
 		}
 		constraints.gridwidth = GridBagConstraints.REMAINDER;
 		

@@ -21,9 +21,6 @@ public class Indicator extends Information {
 
 	@Override
 	public void display() {
-		this.setSize(new Dimension(100,100));
-		this.setBackground(Color.BLACK);
-		
 	}
 	
 	

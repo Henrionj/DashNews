@@ -8,7 +8,7 @@ import javax.swing.JComponent;
  * @author  IT Prouds & CO.
  *
  */
-public abstract class Item extends JComponent{
+public abstract class Item{
  
 	private Date addingDate;
 
@@ -26,12 +26,9 @@ public abstract class Item extends JComponent{
 	
 	/**
 	 * Creates an item.
-<<<<<<< HEAD
 	 * @param length 
 	 * @param height 
 	 * 
-=======
->>>>>>> branch 'master' of https://github.com/Henrionj/DashNews.git
 	 * @param length The length of an item.
 	 * @param height The height of an item.
 	 */
