@@ -1,7 +1,5 @@
 package fr.iutvalence.info.dut.m2107.dashnews.item;
 
-import java.awt.Color;
-import java.awt.Dimension;
 
 
 public class Indicator extends Information {
@@ -20,7 +18,15 @@ public class Indicator extends Information {
 	}
 
 	@Override
-	public void display() {
+	public void display() 
+	{
+		
+	}
+
+	@Override
+	public void actualize() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

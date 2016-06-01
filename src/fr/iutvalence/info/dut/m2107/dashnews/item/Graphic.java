@@ -53,4 +53,10 @@ public class Graphic extends Item {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public void actualize() {
+		// TODO Auto-generated method stub
+		
+	}
 }

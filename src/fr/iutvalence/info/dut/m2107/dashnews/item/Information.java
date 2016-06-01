@@ -13,7 +13,7 @@ public abstract class Information extends Item {
 	 */
 	private String name;
 
-	// TODO Pourquoi la taille en param�tre de l'item
+	// TODO Pourquoi la taille en parametre de l'item
 	/**
 	 * 
 	 * @param length
@@ -29,8 +29,7 @@ public abstract class Information extends Item {
 	 * @param temps
 	 */
 	public void actualize(Date temps) {
-		// TODO - implement Information.actualize
-		throw new UnsupportedOperationException();
+
 	}
 
 }

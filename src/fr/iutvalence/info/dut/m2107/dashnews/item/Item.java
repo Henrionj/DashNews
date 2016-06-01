@@ -11,6 +11,7 @@ import javax.swing.JComponent;
 public abstract class Item{
  
 	private Date addingDate;
+	private String name;
 
 	/**
 	 * Item's length
@@ -39,6 +40,18 @@ public abstract class Item{
 		this.display();
 		this.length=length;
 		this.height=height;
+		this.name = "default";
+
+	}
+	
+	public Item(int length,int height,String name) {
+
+		this.addingDate = java.util.Calendar.getInstance().getTime();
+		this.actualize();
+		this.display();
+		this.length=length;
+		this.height=height;
+		this.name = name;
 
 	}
 
@@ -51,10 +64,7 @@ public abstract class Item{
 	/**
 	 * Actualizes an item.
 	 */
-	public void actualize() {
-
-	}
-	
+	public abstract void actualize();
 	/**
 	 * Get the adding date of an item.
 	 * @return addingDate The creation date of an item. 

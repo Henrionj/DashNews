@@ -31,4 +31,10 @@ public class SocialNetwork extends Information {
 		
 	}
 
+	@Override
+	public void actualize() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

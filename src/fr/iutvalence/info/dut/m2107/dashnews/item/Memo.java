@@ -43,4 +43,10 @@ public class Memo extends Item {
 		
 	}
 
+	@Override
+	public void actualize() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
