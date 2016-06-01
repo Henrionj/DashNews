@@ -23,8 +23,8 @@ public class SocialNetwork extends Information {
 	 * @param length The length of social network item.
 	 * @param height The height of social network item. 
 	 */
-	public SocialNetwork(int length,int height) {
-		super(length,height);
+	public SocialNetwork(int length,int height,String name) {
+		super(length,height,name);
 		// TODO Auto-generated constructor stub
 	}
 

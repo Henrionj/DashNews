@@ -17,7 +17,7 @@ public class StockPage extends Page {
 	public StockPage(String name) {
 		super(name);
 		this.items.add(new Memo(10,10));
-		this.items.add(new SocialNetwork(10,10));
+		this.items.add(new SocialNetwork(10,10,"name"));
 	}
 
 	@Override

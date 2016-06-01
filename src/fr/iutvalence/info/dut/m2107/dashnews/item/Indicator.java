@@ -12,14 +12,14 @@ public class Indicator extends Information {
 	 * @param length
 	 * @param height
 	 */
-	public Indicator(int length,int height) {
-		super(length,height);
+	public Indicator(int length,int height, String name) {
+		super(length,height,name);
 		this.display();
 	}
 	
-	public Indicator(int length, int height, float[] data)
+	public Indicator(int length, int height, float[] data, String name)
 	{
-		super(length,height);
+		super(length,height,name);
 		this.data = data;
 	}
 

@@ -18,11 +18,11 @@ public class CommandPage extends Page{
 	 */
 	public CommandPage(String name) {
 		super(name);
-		InfoCommand c1 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight());
-		InfoCommand c2 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight());
+		InfoCommand c1 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight(),"name");
+		InfoCommand c2 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight(),"name");
 		c1.setName("Commandes effectuées par l'enstreprise");
 		c2.setName("Commandes reçus par l'enstreprise");
-		SocialNetwork s = new SocialNetwork(SocialNetwork.getDefaultLength(),SocialNetwork.getDefaultHeight());
+		SocialNetwork s = new SocialNetwork(SocialNetwork.getDefaultLength(),SocialNetwork.getDefaultHeight(),"name");
 		this.items.add(c1);
 		this.items.add(c2);
 		this.items.add(s);
