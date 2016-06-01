@@ -13,11 +13,6 @@ public class Calendar extends Item {
 	private static final int NUMBER_OF_YEAR = 3;
 	
 	/**
-	 * Calendar's name 
-	 */
-	private String nameCalendrier;
-	
-	/**
 	 * Table which stores Years
 	 */
 	private Year[] myYears;
@@ -26,11 +21,10 @@ public class Calendar extends Item {
 	 * Creates a calendar with default length and height, a name and without notifications. 
 	 * @param name The name of the calendar.
 	 */
-	public Calendar(String name,int length,int height)
+	public Calendar(int length,int height)
 	{
 		super(length,height);
 		
-		this.nameCalendrier=name;
 		
 		this.myYears=new Year[NUMBER_OF_YEAR];
 		
@@ -39,19 +33,6 @@ public class Calendar extends Item {
 			this.myYears[i-2015] = new Year(i);
 		}
 
-	}
-
-
-
-	
-
-
-	/**
-	 * Name getter
-	 * @return Calendar's name
-	 */
-	public String getNameCalendrier() {
-		return nameCalendrier;
 	}
 
 	/**

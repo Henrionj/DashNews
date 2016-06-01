@@ -9,6 +9,17 @@ package fr.iutvalence.info.dut.m2107.dashnews.item;
 public class Memo extends Item {
  
 	/**
+	 * Memo's default length
+	 */
+	private static final int DEFAULT_LENGTH = 50;
+	
+	/**
+	 * Memo's default height
+	 */
+	private static final int DEFAULT_HEIGHT = 75;
+	
+
+	/**
 	 * Message in the memo.
 	 */
 	private String text;
@@ -47,6 +58,14 @@ public class Memo extends Item {
 	public void actualize() {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public static int getDefaultLength() {
+		return DEFAULT_LENGTH;
+	}
+
+	public static int getDefaultHeight() {
+		return DEFAULT_HEIGHT;
 	}
 
 }
