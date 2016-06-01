@@ -24,8 +24,8 @@ public class InfoCommand extends Information {
 	 */
 	private List<Command> topay;
 
-	public InfoCommand(int length, int height) {
-		super(length, height);
+	public InfoCommand(int length, int height,String name) {
+		super(length, height,name);
 		this.paid=null;
 		this.topay=null;
 	}

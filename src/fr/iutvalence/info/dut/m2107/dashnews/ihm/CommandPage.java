@@ -9,8 +9,6 @@ import java.awt.Dimension;
 import javax.swing.JInternalFrame;
 
 import fr.iutvalence.info.dut.m2107.dashnews.item.InfoCommand;
-import fr.iutvalence.info.dut.m2107.dashnews.item.Item;
-import fr.iutvalence.info.dut.m2107.dashnews.item.Notification;
 import fr.iutvalence.info.dut.m2107.dashnews.item.SocialNetwork;
 
 /**
@@ -24,11 +22,9 @@ public class CommandPage extends Page{
 	 */
 	public CommandPage(String name) {
 		super(name);
-		InfoCommand c1 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight());
-		InfoCommand c2 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight());
-		c1.setName("Commandes effectuées par l'enstreprise");
-		c2.setName("Commandes reçus par l'enstreprise");
-		SocialNetwork s = new SocialNetwork(SocialNetwork.DEFAULT_LENGTH,SocialNetwork.DEFAULT_HEIGHT);
+		InfoCommand c1 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight(),"Commandes effectuées par l'enstreprise");
+		InfoCommand c2 = new InfoCommand(InfoCommand.getDefaultLength(),InfoCommand.getDefaultHeight(),"Commandes reçus par l'enstreprise");
+		SocialNetwork s = new SocialNetwork(SocialNetwork.DEFAULT_LENGTH,SocialNetwork.DEFAULT_HEIGHT,"Résau social");
 		this.items.add(c1);
 		this.items.add(c2);
 		this.items.add(s);
