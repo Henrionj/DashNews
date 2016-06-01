@@ -1,5 +1,6 @@
 package fr.iutvalence.info.dut.m2107.dashnews.ihm;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -8,6 +9,7 @@ import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JFrame;
+import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -112,7 +114,7 @@ public Ihm()
 	
 	board.add(header);
 	board.add(tabs);
-	
+	JInternalFrame ind1 = new JInternalFrame("test", true, true,true,true);
 	
 	this.setResizable(false);
 	this.setContentPane(board);

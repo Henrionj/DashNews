@@ -16,6 +16,12 @@ public class Indicator extends Information {
 		super(length,height);
 		this.display();
 	}
+	
+	public Indicator(int length, int height, float[] data)
+	{
+		super(length,height);
+		this.data = data;
+	}
 
 	@Override
 	public void display() 
@@ -24,8 +30,9 @@ public class Indicator extends Information {
 	}
 
 	@Override
-	public void actualize() {
-		// TODO Auto-generated method stub
+	public void actualize() 
+	{
+		
 		
 	}
 	

@@ -8,10 +8,6 @@ import java.util.Date;
  */
 public abstract class Information extends Item {
 	
-	/**
-	 * Name of information.
-	 */
-	private String name;
 
 	// TODO Pourquoi la taille en parametre de l'item
 	/**

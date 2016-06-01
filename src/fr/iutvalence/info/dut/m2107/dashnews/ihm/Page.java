@@ -4,12 +4,13 @@ import java.awt.GridBagConstraints;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JDesktopPane;
 import javax.swing.JPanel;
 
 import fr.iutvalence.info.dut.m2107.dashnews.State;
 import fr.iutvalence.info.dut.m2107.dashnews.item.Item;
 
-public abstract class Page extends JPanel{
+public abstract class Page extends JDesktopPane{
  
 	protected List<Item> items;
 	private String name;
