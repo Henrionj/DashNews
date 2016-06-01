@@ -7,12 +7,12 @@ public class InfoCommand extends Information {
 	/**
 	 * InfoCommand's default length
 	 */
-	private static final int DEFAULT_LENGTH = 200;
+	private static final int DEFAULT_LENGTH = 275;
 	
 	/**
 	 * InfoCommand's default height
 	 */
-	private static final int DEFAULT_HEIGHT = 250;
+	private static final int DEFAULT_HEIGHT = 350;
 	
 	/**
 	 * List of commands paid
