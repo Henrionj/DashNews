@@ -7,12 +7,12 @@ public class InfoCommand extends Information {
 	/**
 	 * InfoCommand's default length
 	 */
-	private static final int DEFAULT_LENGTH = 275;
+	public static final int DEFAULT_LENGTH = 275;
 	
 	/**
 	 * InfoCommand's default height
 	 */
-	private static final int DEFAULT_HEIGHT = 350;
+	public static final int DEFAULT_HEIGHT = 350;
 	
 	/**
 	 * List of commands paid
@@ -42,14 +42,6 @@ public class InfoCommand extends Information {
 	public void actualize() {
 		// TODO Auto-generated method stub
 		
-	}
-
-	public static int getDefaultLength() {
-		return DEFAULT_LENGTH;
-	}
-
-	public static int getDefaultHeight() {
-		return DEFAULT_HEIGHT;
 	}
 
 }
