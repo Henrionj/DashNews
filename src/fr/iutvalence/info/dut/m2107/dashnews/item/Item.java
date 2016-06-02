@@ -92,6 +92,14 @@ public abstract class Item{
 	
 	
 	/**
+	 * name getter
+	 */
+	public String getName()
+	{
+		return this.name;
+	}
+	
+	/**
 	 * name setter
 	 * @param name the name to set
 	 */

@@ -21,7 +21,7 @@ public class NumberPage extends Page {
 	public NumberPage(String name) 
 	{
 		super(name);
-		this.items.add(new Indicator(150,100));
+		this.items.add(new Indicator(150,100,""));
 		layItems();
 		
 	}

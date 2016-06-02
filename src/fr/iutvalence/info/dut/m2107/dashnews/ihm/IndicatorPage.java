@@ -17,14 +17,14 @@ public class IndicatorPage extends Page {
 
 	public IndicatorPage(String name) {
 		super(name);
-		items.add(new Indicator(1,1));
-		items.add(new Indicator(1,1));
-		items.add(new Indicator(1,1));
-		items.add(new Indicator(1,1));
-		items.add(new Indicator(1,1));
-		items.add(new SocialNetwork(1, 2));
+		items.add(new Indicator(1,1,""));
+		items.add(new Indicator(1,1,""));
+		items.add(new Indicator(1,1,""));
+		items.add(new Indicator(1,1,""));
+		items.add(new Indicator(1,1,""));
+		items.add(new SocialNetwork(1, 2,""));
 		items.add(new Graphic(5, 2));
-		items.add(new SocialNetwork(1, 2));
+		items.add(new SocialNetwork(1, 2,""));
 		
 		layItems();
 		
