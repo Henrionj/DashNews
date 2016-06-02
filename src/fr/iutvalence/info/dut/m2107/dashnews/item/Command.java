@@ -32,7 +32,7 @@ public class Command {
 	 * @param price Command's price
 	 */
 	public Command(String description, Date date, String provider, double price) {
-		super();
+		super(); // ?
 		this.description = description;
 		this.date = date;
 		this.provider = provider;
