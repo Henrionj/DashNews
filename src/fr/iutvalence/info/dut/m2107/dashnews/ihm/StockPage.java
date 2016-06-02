@@ -25,5 +25,8 @@ public class StockPage extends Page {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	private void sorts(int[][] gridToSorts,String name,int price, int amount ){
+		
+	}
 }
