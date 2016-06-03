@@ -18,11 +18,18 @@ public class IhmTest extends TestCase {
 
 	public void testCreation() {
 		Ihm ihm = new Ihm();
+
+		assertEquals(ihm.getHeight(), 600);
+		assertEquals(ihm.getWidth(), 800);
+		assertEquals(ihm.getTitle(), "DashNews");
+		assertEquals(ihm.isResizable(), false);
+		assertEquals(ihm.isVisible(), true);
+		assertEquals(ihm.hasFocus(), false);
 	}
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite();
-		suite.addTest(new IhmTest("CreationTest"));
+		suite.addTest(new IhmTest("testCreation"));
 		return suite;
 	}
 }
