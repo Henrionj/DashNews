@@ -1,6 +1,7 @@
 package fr.iutvalence.info.dut.m2107.dashnews.ihm;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +21,7 @@ public abstract class Page extends JDesktopPane{
 	public Page(String name){
 		this.name = name;
 		this.setPreferredSize(new Dimension(800,600));
+		
 		this.constraints = new GridBagConstraints();
 		this.items = new ArrayList<Item>();
 		

@@ -1,22 +1,15 @@
 package fr.iutvalence.info.dut.m2107.dashnews.ihm;
 
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.GridLayout;
 
 import javax.swing.JFrame;
-import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
-import javax.swing.JTable;
 import javax.swing.SwingConstants;
-import javax.swing.UIManager;
 
 public class Ihm extends JFrame
 {
@@ -48,7 +41,7 @@ public Ihm()
 	
 	tabs.setUI(new TabStyle());
 	
-	Page stocks = new StockPage("Stocks");
+	Page stocks = new StockPage("Stocks", null);
 	Page numbers = new NumberPage("Chiffres");
 	/*
 	 * INDICATEURS	rse
@@ -114,7 +107,6 @@ public Ihm()
 	
 	board.add(header);
 	board.add(tabs);
-	JInternalFrame ind1 = new JInternalFrame("test", true, true,true,true);
 	
 	this.setResizable(false);
 	this.setContentPane(board);
