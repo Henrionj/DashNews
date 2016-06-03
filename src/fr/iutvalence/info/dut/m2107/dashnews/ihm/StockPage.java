@@ -46,7 +46,6 @@ public class StockPage extends Page {
 	@Override
 	public void layItems() {
 		// JInternalFrame for Memo
-
 		JInternalFrame ind = new JInternalFrame(this.items.get(0).getName(),
 				false, true, false, false);
 		ind.setSize(new Dimension(this.items.get(0).getLength(), this.items
@@ -59,7 +58,6 @@ public class StockPage extends Page {
 		this.add(ind);
 
 		// JInternalFrame for social network
-
 		JInternalFrame ind2 = new JInternalFrame(this.items.get(1).getName(),
 				false, true, false, false);
 		ind2.setSize(new Dimension(this.items.get(1).getLength(), this.items
