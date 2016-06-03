@@ -10,20 +10,23 @@ import javax.swing.JPanel;
 
 import fr.iutvalence.info.dut.m2107.dashnews.State;
 import fr.iutvalence.info.dut.m2107.dashnews.item.Item;
+import fr.iutvalence.info.dut.m2107.dashnews.item.Memo;
 
 public abstract class Page extends JDesktopPane{
  
 	protected List<Item> items;
 	private String name;
 	protected GridBagConstraints constraints;
+	protected Memo myMemo;
 	
 	
 	public Page(String name){
 		this.name = name;
 		this.setPreferredSize(new Dimension(800,600));
-		
+		this.myMemo = new Memo(Memo.DEFAULT_LENGTH,Memo.DEFAULT_HEIGHT);
 		this.constraints = new GridBagConstraints();
 		this.items = new ArrayList<Item>();
+		
 		
 	}
 

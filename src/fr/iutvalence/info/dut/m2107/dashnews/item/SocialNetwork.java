@@ -16,7 +16,7 @@ public class SocialNetwork extends Information {
 	/**
 	 * SocialNetwork's default height
 	 */
-	public static final int DEFAULT_HEIGHT = 250;
+	public static final int DEFAULT_HEIGHT = 350;
 	
 	/**
 	 * Initializes social network item with a size
