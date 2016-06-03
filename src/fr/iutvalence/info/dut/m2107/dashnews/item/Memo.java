@@ -16,7 +16,7 @@ public class Memo extends Item {
 	/**
 	 * Memo default height
 	 */
-	public static final int DEFAULT_HEIGHT = 250;
+	public static final int DEFAULT_HEIGHT = 350;
 	
 
 	/**
@@ -31,9 +31,8 @@ public class Memo extends Item {
 	 */
 	public Memo(int length, int height) {
 		super(length,height);
-
 		this.text = "Click here to write";
-		this.text = "Clic here to write";
+		this.name = "Memo";
 	}
 	
 	/**

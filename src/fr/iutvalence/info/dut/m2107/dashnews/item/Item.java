@@ -11,7 +11,7 @@ import javax.swing.JComponent;
 public abstract class Item{
  
 	private Date addingDate;
-	private String name;
+	protected String name;
 
 	/**
 	 * Item's length
