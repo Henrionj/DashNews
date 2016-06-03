@@ -12,7 +12,7 @@ public class InfoCommand extends Information {
 	/**
 	 * InfoCommand's default height
 	 */
-	public static final int DEFAULT_HEIGHT = 350;
+	public static final int DEFAULT_HEIGHT = 450;
 	
 	/**
 	 * List of commands paid
