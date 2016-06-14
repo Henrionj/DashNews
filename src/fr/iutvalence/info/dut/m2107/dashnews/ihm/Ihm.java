@@ -5,6 +5,8 @@ import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -23,7 +25,7 @@ public Ihm()
 	
 	this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
 	this.setTitle("DashNews");
-	this.setSize(800, 600);
+	this.setSize(800, 700);
 	this.setLocationRelativeTo(null);  
 //	this.setUndecorated(true);
 	JPanel board = new JPanel();
@@ -64,14 +66,14 @@ public Ihm()
 	
 	JPanel header = new JPanel();
 	header.setLayout(new GridBagLayout());
-	header.setPreferredSize(new Dimension(800,50));
+	header.setPreferredSize(new Dimension(800,60));
 	GridBagConstraints constraints = new GridBagConstraints();
 	
 	
 	JLabel title = new JLabel("DASHNEWS");
 	title.setFont(titleFont);
 	JLabel calendar = new JLabel("Calendar");
-	JLabel authentification = new JLabel("Authentification");
+	JButton authentification = new JButton("Authentification");
 	
 	//--------------------------------------------
 	title.setPreferredSize(new Dimension(300,50));
@@ -102,6 +104,11 @@ public Ihm()
 	header.add(authentification, constraints);        
 
 	//---------------------------------------------
+			   constraints.gridx = 3;
+			   JLabel parameters = new JLabel(new ImageIcon("parameters.png"));
+			   parameters.setPreferredSize(new Dimension(60, 60));
+			   parameters.setVisible(true);
+			   header.add(parameters,constraints);
 	constraints.gridwidth = GridBagConstraints.REMAINDER;
 	
 	

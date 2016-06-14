@@ -29,10 +29,10 @@ public class NumberPage extends Page {
 	@Override
 	public void layItems()
 	{
-		JInternalFrame ind3 = new JInternalFrame("Ind1", false, true,false,false);
+		/*JInternalFrame ind3 = new JInternalFrame("Ind1", false, true,false,false);
 		ind3.setSize(new Dimension(items.get(0).getHeight(),items.get(0).getLength()));
 		ind3.setVisible(true);
-		this.add(ind3);
+		this.add(ind3);*/
 		
 	}
 
