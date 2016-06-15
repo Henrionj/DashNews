@@ -70,8 +70,7 @@ public Ihm()
 	GridBagConstraints constraints = new GridBagConstraints();
 	
 	
-	JLabel title = new JLabel("DASHNEWS");
-	title.setFont(titleFont);
+	JLabel title = new JLabel(new ImageIcon("DashNews_Logo.png"));
 	JLabel calendar = new JLabel("Calendar");
 	JButton authentification = new JButton("Authentification");
 	
